@@ -1,0 +1,92 @@
+---
+import CansancioIcon from "../../assets/icons/esParaTi_cansancio.svg";
+import BajarPesoIcon from "../../assets/icons/esParaTi_BajarPeso.svg";
+import DescontrolMetabolicoIcon from "../../assets/icons/esParaTi_descontrolMetabolico.svg";
+import DesequilibriohormonalIcon from "../../assets/icons/esParaTi_desequilibrioHormol.svg";
+import EnfermedadesCronicasIcon from "../../assets/icons/esParaTi_EnfermedadesCronicas.svg";
+import EstresElevadoIcon from "../../assets/icons/esParaTi_EstresElevado.svg";
+import ProblemasDigestivosIcon from "../../assets/icons/esParaTi_problemasDigestivos.svg";
+import ResistenciaInsulinaIcon from "../../assets/icons/esParaTi_ResistenciaInsulina.svg";
+import RespuestasClarasIcon from "../../assets/icons/esParaTi_respuestasClaras.svg";
+---
+
+<section id="benefits" class="section-paper">
+  <div class="section-header">
+    <h2>¿Este Programa Es Para Ti?</h2>
+    <p>
+      El MÉTODO KC12 está diseñado para personas comprometidas con su bienestar
+      a largo plazo. Identifica si te sientes reflejada en alguna de estas
+      situaciones:
+    </p>
+  </div>
+  <div class="section-content">
+    <div class="card-benefit">
+      <CansancioIcon class="icon" />
+      <h3>Cansancio Crónico</h3>
+    </div>
+    <div class="card-benefit">
+      <ProblemasDigestivosIcon class="icon" />
+      <h3>Inflamación / Problemas Digestivos</h3>
+    </div>
+    <div class="card-benefit">
+      <DesequilibriohormonalIcon class="icon" />
+      <h3>Desequilibrio Hormonal</h3>
+    </div>
+    <div class="card-benefit">
+      <ResistenciaInsulinaIcon class="icon" />
+      <h3>Resistencia a la Insulina / Glucosa Elevada</h3>
+    </div>
+    <div class="card-benefit">
+      <BajarPesoIcon class="icon" />
+      <h3>Dificultad para Bajar de Peso</h3>
+    </div>
+    <div class="card-benefit">
+      <EstresElevadoIcon class="icon" />
+      <h3>Estrés Elevado</h3>
+    </div>
+    <div class="card-benefit">
+      <EnfermedadesCronicasIcon class="icon" />
+      <h3>Enfermedades Crónicas</h3>
+    </div>
+    <div class="card-benefit">
+      <DescontrolMetabolicoIcon class="icon" />
+      <h3>Descontrol Metabólico</h3>
+    </div>
+    <div class="card-benefit">
+      <RespuestasClarasIcon class="icon" />
+      <h3>Consultas Previas sin Respuestas Claras</h3>
+    </div>
+  </div>
+
+  <div class="section-footer">
+    <p>
+      Si deseas comprender lo que ocurre en tu cuerpo y mejorar tu salud paso a
+      paso, el Método KC12 te brindará las herramientas y el apoyo que
+      necesitas.
+    </p>
+  </div>
+</section>
+
+<style>
+  #benefits .section-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  #benefits .card-benefit {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* border: 1px solid var(--global-text-color); */
+  }
+  #benefits .card-benefit h3 {
+    /* border-bottom: 1px solid var(--global-text-color); */
+    margin: 0;
+    font-size: 28px;
+  }
+  #benefits .card-benefit .icon {
+    width: 50px;
+    height: 50px;
+  }
+</style>

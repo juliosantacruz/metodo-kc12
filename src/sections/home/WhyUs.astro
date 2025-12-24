@@ -1,0 +1,98 @@
+---
+import DoctorIcon from "/src/assets/icons/doctorIcon.svg";
+import CalendarIcon from "/src/assets/icons/calendarIcon.svg";
+import GlassesIcon from "/src/assets/icons/glassesIcon.svg";
+import GraphIcon from "/src/assets/icons/graphIcon.svg";
+---
+
+<section id="why-us" class="section-paper">
+  <div class="section-header">
+    <h2>¿Por Qué No Has Visto Cambios Duraderos?</h2>
+    <p>
+      Muchos pacientes llegan frustrados tras probar dietas rápidas, retos o
+      suplementos sin éxito. La verdad es que el cuerpo necesita tiempo para
+      sanar y adaptarse. No puedes revertir años de inflamación, estrés o
+      desequilibrios hormonales en unas pocas semanas.
+    </p>
+  </div>
+  <div class="section-content">
+    <div class="card-benefit">
+      <div class="icon-wrapper">
+        <DoctorIcon class="icon" />
+      </div>
+      <h3>Acompañamiento Constante</h3>
+      <p>Guía profesional y cercanía para cada etapa de tu proceso.</p>
+    </div>
+
+    <div class="card-benefit">
+      <div class="icon-wrapper">
+        <CalendarIcon class="icon" />
+      </div>
+      <h3>Educación y Empoderamiento</h3>
+      <p>
+        Entender cómo funciona tu cuerpo es clave para tomar el control de tu
+        salud.
+      </p>
+    </div>
+    <div class="card-benefit">
+      <div class="icon-wrapper">
+        <GraphIcon class="icon" />
+      </div>
+      <h3>Ajustes Mensuales</h3>
+      <p>Planes adaptados a tu evolución y necesidades cambiantes.</p>
+    </div>
+
+    <div class="card-benefit">
+      <div class="icon-wrapper">
+        <GlassesIcon class="icon" />
+      </div>
+      <h3>Enfoque en la Causa Raíz</h3>
+      <p>Tratamos el origen de tus síntomas, no solo sus manifestaciones.</p>
+    </div>
+  </div>
+  <div class="section-footer">
+    <p>
+      El progreso real y sostenible surge de un enfoque integral y un
+      seguimiento continuo. Por eso, hemos creado el Método KC12.
+    </p>
+  </div>
+</section>
+
+<style>
+  #why-us .section-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  #why-us .section-content .card-benefit {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid var(--global-text-color);
+    border-top: 10px solid var(--global-text-color);
+    border-radius: var(--global-border-radius-sm);
+  }
+
+  #why-us .section-content .icon-wrapper {
+    position: absolute;
+    top: -40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--global-text-color);
+    /* margin-bottom: 1rem; */
+  }
+
+  #why-us .section-content .icon {
+    width: 50%;
+    height: 50%;
+    color: var(--global-bg-color);
+  }
+</style>

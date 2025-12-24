@@ -1,0 +1,96 @@
+---
+import img1 from "../../assets/img1.jpg";
+
+---
+
+
+<section id="hero">
+  <div class="card">
+    <!-- Imagen -->
+    <img src={img1.src} alt="Método KC12 Logo" />
+
+    <!-- Texto -->
+    <div class="card-body">
+      <h1>MÉTODO KC12: Transforma tu Salud</h1>
+
+      <p>
+        Descubre una nueva forma de bienestar con acompañamiento médico real y
+        personalizado. Si has probado de todo sin resultados duraderos, es
+        hora de un enfoque diferente. Lo que necesitas no es otra dieta, sino
+        claridad, tiempo y un acompañamiento profesional que te guíe paso a
+        paso.
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Base (📱 Mobile first) */
+#hero {
+  width: 100%;
+}
+
+#hero .card {
+  max-width: 1200px;
+  margin: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: var(--global-bg-card-color);
+  color: var(--global-text-color);
+  display: flex;
+  flex-direction: column-reverse; /* texto arriba, imagen abajo */
+  overflow: hidden;
+}
+
+/* Imagen */
+#hero .card img {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+}
+
+/* Texto */
+#hero .card-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#hero .card-body h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+#hero .card-body p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* 🖥️ Desktop */
+@media (min-width: 768px) {
+  #hero .card {
+    flex-direction: row; /* imagen izquierda, texto derecha */
+  }
+
+  #hero .card img {
+    width: 50%;
+    max-height: 500px;
+  }
+
+  #hero .card-body {
+    padding: 3rem;
+  }
+
+  #hero .card-body h1 {
+    font-size: 2.5rem;
+  }
+
+  #hero .card-body p {
+    font-size: 1.2rem;
+  }
+}
+
+
+</style>
