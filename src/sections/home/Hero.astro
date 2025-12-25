@@ -4,7 +4,7 @@ import img1 from "../../assets/img1.jpg";
 ---
 
 
-<section id="hero">
+<section id="hero" class="section-paper">
   <div class="card">
     <!-- Imagen -->
     <img src={img1.src} alt="Método KC12 Logo" />
@@ -26,13 +26,13 @@ import img1 from "../../assets/img1.jpg";
 
 <style>
 /* Base (📱 Mobile first) */
-#hero {
-  width: 100%;
+#hero{
+  padding: 0;
 }
 
 #hero .card {
   max-width: 1200px;
-  margin: 1rem;
+  /* margin: 1rem; */
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   background-color: var(--global-bg-card-color);

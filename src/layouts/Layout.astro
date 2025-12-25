@@ -19,20 +19,24 @@ import "../styles/global.css";
 </html>
 
 <style>
-	*{
-		box-sizing: border-box;
-		margin: 0;
-		padding: 0;
-	}
+
 	html,
 	body {
 		margin: 0;
 		width: 100vw;
-		height: 100vh;
+		/* height: 100vh; */
 		background-color: var(--global-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+
+    overflow-x:hidden;
+
 	}
 	section {
 		width: 100%;
+    max-width: 1200px;
 		min-height: 100vh;
 		display: flex;
 		align-items: center;
@@ -41,4 +45,4 @@ import "../styles/global.css";
 	}
 
 
-</style> 
+</style>
