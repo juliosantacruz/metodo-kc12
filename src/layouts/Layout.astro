@@ -6,7 +6,7 @@ import "../styles/global.css";
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="favicon.svg" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -32,9 +32,14 @@ import "../styles/global.css";
     gap:2rem;
 
     overflow-x:hidden;
+    background-image: url("https://images.unsplash.com/photo-1566041510639-8d95a2490bfb?ixid=M3wxOTgwNzN8MHwxfHNlYXJjaHwxN3x8d2hpdGUlMjBsaWdodHxlbnwxfHx8fDE3MDA2ODU4OTB8MA&ixlib=rb-4.0.3&w=2400&q=25&auto=format");
+      background-repeat: no-repeat;      /* ❌ no se repite */
+  background-position: center top;   /* 📍 posición fija */
+  background-attachment: fixed;      /* 🔒 no se mueve al hacer scroll */
+  background-size: cover;
 
 	}
-	section {
+	/* section {
 		width: 100%;
     max-width: 1200px;
 		min-height: 100vh;
@@ -42,7 +47,8 @@ import "../styles/global.css";
 		align-items: center;
 		justify-content: center;
 		padding: 1rem;
-	}
+
+	} */
 
 
 </style>

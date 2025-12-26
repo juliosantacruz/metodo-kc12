@@ -15,8 +15,8 @@
 
 .section-paper {
   max-width: 1200px;
-  width: 100%;
-  /* margin: 1rem; */
+  /* width: 100%; */
+  margin: 0 1rem;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   background-color: var(--global-bg-card-color);
