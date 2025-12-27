@@ -1,6 +1,13 @@
+---
+import CallToActionBtn from "../../components/CallToActionBtn.astro"
+---
+
 <section id="class-cta" class="section-paper">
-  <div class="section-content">
+  <div class="section-header">
     <h2>Lugares Limitados: Tu Transformación Personalizada</h2>
+
+  </div>
+  <div class="section-content">
     <p>
       Para asegurar un seguimiento cercano y la máxima calidad en el
       acompañamiento, el MÉTODO KC12 acepta solo de 10 a 15 pacientes por año.
@@ -12,7 +19,18 @@
       Si estás lista para invertir en tu salud y ser parte de un grupo selecto
       que transformará su bienestar, este es tu momento.
     </p>
-    <a href="#contact" class="btn-cta">Inscríbete Ahora</a>
-    <a href="#contact" class="btn-cta">Envia un mensaje</a>
   </div>
+  <CallToActionBtn/>
 </section>
+
+<style>
+  #class-cta .section-content{
+    margin: 1rem 0;
+  }
+
+  @media (min-width: 768px) {
+   #class-cta .section-content{
+    margin: 2rem 0;
+  }
+}
+</style>

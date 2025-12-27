@@ -1,31 +1,110 @@
 <section id="how-this-works" class="section-paper">
-    <div class="section-header">
-        <h2>¿Por Qué Este Programa Funciona?</h2>
-        <p>El éxito del Método KC12 radica en su enfoque holístico y personalizado. No se trata solo de "hacer dieta", sino de comprender a fondo tu cuerpo y sus necesidades.</p>
+  <div class="section-header">
+    <h2>¿Por Qué Este Programa Funciona?</h2>
+    <p>
+      El éxito del Método KC12 radica en su enfoque holístico y personalizado.
+      No se trata solo de "hacer dieta", sino de comprender a fondo tu cuerpo y
+      sus necesidades.
+    </p>
+  </div>
+  <div class="section-content">
+    <div class="content-table">
+      <div class="card">
+        <h3>Medicina Integrativa</h3>
+        <p>
+          Una combinación de medicina, nutrición y suplementación basada en
+          evidencia.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Hábitos Sostenibles</h3>
+        <p>
+          Construye rutinas que puedas mantener a largo plazo, sin sacrificios
+          extremos.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Educación Constante</h3>
+        <p>
+          Aprenderás cómo funciona tu cuerpo, qué causa tus síntomas y cómo
+          impactan tus hormonas.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Seguimiento Real</h3>
+        <p>Un acompañamiento que garantiza progreso y ajuste continuo.</p>
+      </div>
     </div>
-    <div class="section-content">
-        <div class="content-table">
-            <div class="card">
-                <h3>Medicina Integrativa</h3>
-                <p>Una combinación de medicina, nutrición y suplementación basada en evidencia.</p>
-            </div>
-            <div class="card">
-                <h3>Hábitos Sostenibles</h3>
-                <p>Construye rutinas que puedas mantener a largo plazo, sin sacrificios extremos.</p>
-            </div>
-            <div class="card">
-                <h3>Educación Constante</h3>
-                <p>Aprenderás cómo funciona tu cuerpo, qué causa tus síntomas y cómo impactan tus hormonas.</p>
-            </div>
-            <div class="card">
-                <h3>Seguimiento Real</h3>
-                <p>Un acompañamiento que garantiza progreso y ajuste continuo.</p>
-            </div>
-        </div>
-    </div>
-    <div class="section-footer">
-        <p>Entenderemos cómo responde tu metabolismo a diferentes alimentos y cómo influyen el estrés y tu descanso, para un bienestar duradero. Es medicina integrativa práctica, humana y efectiva.</p>
-    </div>
-
-
+  </div>
+  <div class="section-footer">
+    <p>
+      Entenderemos cómo responde tu metabolismo a diferentes alimentos y cómo
+      influyen el estrés y tu descanso, para un bienestar duradero. Es medicina
+      integrativa práctica, humana y efectiva.
+    </p>
+  </div>
 </section>
+
+<style>
+  #how-this-works {
+    margin: 1rem;
+    padding: 0;
+  }
+  #how-this-works .section-header {
+    padding: 1rem;
+  }
+  #how-this-works .section-content {
+    /* margin: 2rem 0; */
+  }
+  #how-this-works .section-content .content-table {
+    /* margin: 2rem 0; */
+    display: grid;
+  }
+  #how-this-works .section-content .content-table .card {
+    color: var(--global-bg-card-color);
+    background-color: var(--global-text-color);
+    padding: 1rem;
+    border: 1px solid var(--global-bg-card-color);
+  }
+  #how-this-works .section-content .content-table .card h3 {
+    margin-bottom: 1rem;
+  }
+  #how-this-works .section-footer {
+    padding: 1rem;
+  }
+
+  @media (min-width: 768px) {
+    #how-this-works {
+      margin: 2rem;
+      padding: 0;
+    }
+    #how-this-works .section-header {
+      padding: 2rem;
+    }
+    #how-this-works .section-content .content-table {
+      /* margin: 2rem 0; */
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    #how-this-works .section-footer {
+      padding: 2rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    #how-this-works {
+      margin: 1.5rem;
+      padding: 0;
+    }
+    #how-this-works .section-header {
+      padding: 1.5rem;
+    }
+    #how-this-works .section-content .content-table {
+      /* margin: 2rem 0; */
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    #how-this-works .section-footer {
+      padding: 1.5rem;
+    }
+  }
+</style>

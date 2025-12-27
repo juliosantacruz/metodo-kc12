@@ -76,7 +76,6 @@ import GraphIcon from "/src/assets/icons/graphIcon.svg";
     border-top: 10px solid var(--global-text-color);
     border-radius: var(--global-border-radius-sm);
   }
-
   #why-us .section-content .icon-wrapper {
     position: absolute;
     top: -40px;
@@ -94,5 +93,13 @@ import GraphIcon from "/src/assets/icons/graphIcon.svg";
     width: 50%;
     height: 50%;
     color: var(--global-bg-color);
+  }
+
+  @media (min-width: 768px) {
+    #why-us .section-content {
+      gap: 2rem;
+      grid-template-columns: repeat(2, 1fr);
+
+    }
   }
 </style>
